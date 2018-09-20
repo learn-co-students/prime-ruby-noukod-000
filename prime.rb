@@ -1,15 +1,7 @@
-def prime?(n)
-
-  p = 2
-  if n < 2
-      return p
+def is_prime?(num)
+  (2...num).each do |divisor|
+    return false if num % divisor == 0
   end
 
-
-  if (n % p != 0) && (p < n)
-      return true
-  else
-    return false
-    end
-
+  true
 end
