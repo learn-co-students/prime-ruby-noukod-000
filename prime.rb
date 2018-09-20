@@ -1,5 +1,15 @@
-def prime?(number)
-if number == 1 then return true end
-if numebr == 0 then return false end
-  (2..n/2).none? { |i| n % i == 0}
+def prime?(n)
+
+  p = 2
+  if n < 2
+      return p
+  end
+
+
+  if (n % p != 0) && (p < n)
+      return true
+  else
+    return false
+    end
+
 end
