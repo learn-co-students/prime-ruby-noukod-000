@@ -1,7 +1,11 @@
-def is_prime?(num)
-  (2...num).each do |divisor|
-    return false if num % divisor == 0
+def prime?(num)
+  if num > 1
+    range = (2...num -1).to_a
+    range.none? do |divisor|
+     num % divisor == 0
   end
+else
 
-  true
+  false
+end
 end
